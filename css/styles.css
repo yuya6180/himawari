@@ -13,13 +13,12 @@ header{
     z-index: 10;
 }
 .head{
-    background-color: rgb(255, 219, 101);
+    background-color: rgb(255, 230, 147);
     display: flex;
 }
 .head ul li{
     opacity: 0;
 }
-
 
 @media screen and (min-width: 1440px){
   .head{
@@ -83,17 +82,17 @@ header{
     color: white;
     letter-spacing: 3px;
     text-align: center;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 .red-h1{
-    font-size: 34px;
-    color: #fff;
+    font-size: 26px;
+    color: #000000;
     font-weight: 600;
     letter-spacing: 2px;
     font-weight: 600;
     padding-bottom: 4px;
     text-align: center;
-    font-family: serif;
+    font-family: 'Amatic SC', cursive;
 }
 .head h1 a:hover{
     opacity: .6;
@@ -110,8 +109,13 @@ header{
 
 @media screen and (max-width: 1440px){
     .head img{
-        display: none;
+        /* display: none; */
+        height: 70px;
+        border-radius: 50%;
     } 
+    .head{
+        height: 70px;
+    }
 }
 
 
@@ -134,24 +138,24 @@ hamburger(ハンバーガーアイコン)
   width: 40px;
   height: 3px;
   right: 0;
-  background-color: burlywood;
+  background-color: rgb(255, 230, 147);
   transition: all 0.5s;
 }
 
 .hamburger__line--1 {
   top: -5px;
-  background: white;
+  background: rgb(0, 0, 0);
 }
 
 .hamburger__line--2 {
   top: 10px;
   height: 3px;
-  background: white;
+  background: rgb(0, 0, 0);
 }
 
 .hamburger__line--3 {
   top: 24px;
-  background: white;
+  background: rgb(0, 0, 0);
 }
   
   /*ハンバーガーがクリックされたら*/
@@ -178,7 +182,7 @@ hamburger(ハンバーガーアイコン)
     top: 0;
     width: 70%; /* 出てくるスライドメニューの幅 */
     height: 100vh;
-    background-color: burlywood;
+    background-color: rgb(255, 230, 147);
     transition: all 1.0s;
     z-index: 200;
     overflow-y: auto; /* メニューが多くなったらスクロールできるように */
@@ -195,12 +199,13 @@ hamburger(ハンバーガーアイコン)
       font-size: 28px;
       margin-top: 20px;
       text-align: center;
-      color: white;
+      color: rgb(0, 0, 0);
       opacity: 1;
       margin-top: 50px; 
       z-index: 10; 
       letter-spacing: 4px;
       font-weight: 600;
+      font-family: 'Amatic SC', cursive;
   }
   
   /*ハンバーガーがクリックされたら右からスライド*/
@@ -278,7 +283,7 @@ main {
 }
 .contain1-text{
     position: absolute;
-    top: 26%;
+    top: 20%;
     right: 10%;
     color: #fff;
     font-size: 26px;
@@ -287,7 +292,7 @@ main {
 }
 .contain1-text2{
     position: absolute;
-    top: 32%;
+    top: 26%;
     right: 10%;
     font-size: 18px;
     color: #fff;
@@ -305,6 +310,17 @@ main {
     display: block;
     opacity: .7;
 }
+.biglogo img{
+    position: absolute;
+    z-index: 1;
+    width: 140px;
+    border-radius: 50%;
+    /* top: 10%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
 .contain2{
     background-color: burlywood;
     /* width: 80%; */
@@ -313,7 +329,7 @@ main {
 }
 .contain2-text{
     position: absolute;
-    top: 3%;
+    top: 14%;
     bottom: 10%;
     background-color: beige;
     opacity: .8;
@@ -385,7 +401,7 @@ main {
     height: auto;
 }
 .contain3{
-    background-color: burlywood;
+    background-color: rgb(255, 248, 239);
     border-top: #fff 6px double;
 }
 .contain3 h2{
@@ -420,7 +436,7 @@ main {
     height: auto;
 }
 .contain4{
-    background-color: rgb(231, 204, 169);
+    background-color: rgb(255, 240, 218);
     border-top: #fff 6px double;
 }
 .contain4 h2{
@@ -456,7 +472,7 @@ main {
 }
 .contain5{
     border-top: #fff 6px double;
-    background-color: burlywood;
+    background-color: rgb(255, 248, 239);
     padding-bottom: 30px;
 }
 .contain5 h2{
@@ -509,7 +525,7 @@ main {
 
 
 .contain6{
-    background-color: rgb(231, 204, 169);
+    background-color: rgb(255, 240, 218);
     border-top: #fff 6px double;
 }
 .contain6 h2{
@@ -556,15 +572,15 @@ main {
     border-bottom: #fff 1px solid;
 }
 .contain6 ul li:nth-child(even){
-    background-color: rgb(232, 193, 143);
+    background-color: rgb(255, 248, 239);
     line-height: 22px;
     font-size: 14px;
 }
 
 /* ---------footer-------- */
 .foo{
-    background-color: rgb(255, 219, 101);
-    color: #fff;
+    background-color: rgb(255, 230, 147);
+    color: #000000;
     padding: 20px
 }
 .footer-tel{
@@ -575,7 +591,7 @@ main {
 }
 .footer-contact{
     font-size: 22px;
-    border: 2px #fff solid;
+    border: 2px #000000 solid;
     border-radius: 4px;
     text-align: center;
     width: 70%;
@@ -586,5 +602,5 @@ main {
     font-size: 12px;
     text-align: center;
     padding: 10px;
-    background-color: rgb(248, 206, 70);
+    background-color: rgb(255, 240, 218);
 }
